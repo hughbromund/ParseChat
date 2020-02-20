@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
             } else {
                 print("User Registered successfully")
                 // manually segue to logged in view
+                
             }
         }
     }
@@ -59,9 +60,21 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func SignupDidPress(_ sender: Any) {
+//        if (UsernameTextField.text?.isEmpty ?? false) {
+//            let alertController = UIAlertController(title: "Username Empty", message: "You must provide a valid username", preferredStyle: .alert)
+////            let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+////                // handle response here.
+////            }
+////            // add the OK action to the alert controller
+////            alertController.addAction(OKAction)
+//
+//            present(alertController, animated: true)
+//        }
+        registerUser()
     }
     
     @IBAction func LoginDidPress(_ sender: Any) {
+        loginUser()
     }
     /*
     // MARK: - Navigation
